@@ -1,0 +1,21 @@
+body{
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.change{
+    width: 12vw;
+    height: 4vh;
+    background-color: gray;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+input{
+    outline: none;
+    width: 12vw;
+    height: 4vh;
+}
