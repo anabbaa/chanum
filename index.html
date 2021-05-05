@@ -18,19 +18,39 @@
           let usernumber=0;
 function registerUserValue(e) {
   usernumber = e.target.value;
+  
 }
 const userinputnow = document.querySelector("#userinputnow");
 const result = document.querySelector(".result");
 const userInput = document.querySelector(".userinput");
 const change = document.querySelector(".change");
 
-function convert (){
-    let usernumber =0;
-let binary = parseInt(usernumber, 2);
-return result.innerHTML = binary;
+
+
+
+function convert(e) {
+  e.preventDefault();
+  let number = parseInt(usernumber);
+  let binary = number.toString(2);
+  let decimal = number.toString(16);
+  if (number == 0 && number == 1){
+    result.innerHTML = decimal;
+  }
+  else
+  {
+    result.innerHTML = binary;
+  }
+  return result;
 }
+
+
+
+ 
+
 change.addEventListener("click", convert);
 userinputnow.addEventListener("keyup", registerUserValue);
+
+
 
 
     </script>
